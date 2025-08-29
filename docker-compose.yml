@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    image: sz30/4pfn:v1
+    container_name: app
+    volumes:
+      - /var/run/tappd.sock:/var/run/tappd.sock
+    environment:
+    restart: always
